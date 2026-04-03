@@ -111,13 +111,13 @@
         function deleteCompet(){
             database.ref('competition').remove()
                 .then(() => {
-                    alert('datos limpiados')
+                    alert('datos de competidor limpiados')
                 });
         }
         function deleteVotes(){
             database.ref('votes').remove()
                 .then(() => {
-                    alert('datos limpiados')
+                    alert('datos de votos limpiados')
                 });
         }
     </script>
