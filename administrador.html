@@ -104,7 +104,18 @@
                 });
         }
         function clearData(){
-            database.ref('current').remove()
+            deleteCompet()
+            deleteVotes()
+        }
+
+        function deleteCompet(){
+            database.ref('competition').remove()
+                .then(() => {
+                    alert('datos limpiados')
+                });
+        }
+        function deleteVotes(){
+            database.ref('votes').remove()
                 .then(() => {
                     alert('datos limpiados')
                 });
